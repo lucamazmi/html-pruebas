@@ -1,0 +1,20 @@
+table{
+  border-collapse: collapse;
+  margin: 0 auto;
+  border: 3px solid black;
+}
+
+th, td{
+  border: 2px solid black;
+  padding: 10px;
+  text-align: center;
+}
+
+img{
+  width: 80px;
+  height: auto;
+}
+
+h1{
+  text-align: center;
+}

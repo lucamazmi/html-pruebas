@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <h1>Formulario de Inscripción al Taller de Fotografía</h1>
+<table>
+    <form>
+        <fieldset>
+        <legend>Datos Personales:</legend> <br>
+        <label>Nombre:</label>
+        <input type="text" size="40">
+        <label>Apellidos:</label>
+        <input type="text" size="40">
+        <label>DNI:</label>
+        <input type="text" size="28">
+        <label>EMAIL:</label>
+        <input type="text" size="28">
+        <label>Teléfono:</label>
+        <input type="number" size="25" pattern="[0-9]{9}">
+        </fieldset>
+
+        <fieldset>
+        <legend>Datos del taller:</legend> <br> <br>
+        <label>¿Tienes cámara propia?</label> <br> <br>
+        <label>Si</label>
+        <input type="radio" name="name" value="Si">
+        <label>No</label>
+        <input type="radio" name="name" value="Si"> <br> <br>
+
+        <legend>Tipo de cámara: 
+        <select name="Compacta">
+            <option value="Compacta">Compacta</option>
+            <option value="Compacta">Réflex</option>
+            <option value="Compacta">Mirrorless</option>
+            <option disabled value="Compacta">Compacta</option>
+        </select>
+        </legend> <br>
+
+        <legend>Nivel de experiencia: 
+        <select name="Nivel de Experiencia">
+            <option value="Principiante">Principiante</option>
+            <option value="Intermedio">Intermedio</option>
+            <option value="Avanzado">Avanzado</option>
+        </select>
+        </legend> <br>
+
+        <legend>Áreas de interés</legend> <br>
+        <input type="checkbox" , name="name" value="Retrato">
+        <label>Retrato</label>
+        <input type="checkbox" , name="name" value="Paisaje">
+        <label>Paisaje</label>
+        <input type="checkbox" , name="name" value="Fotografía nocturna">
+        <label>Fotografía nocturna</label>
+        <input disabled type="checkbox" , name="name" value="Edición digital">
+        <label>Edición digital</label> <br> <br>
+
+
+        <legend>
+        Color favorito para la edición:
+        <input type="color">
+        </legend>
+        <br>
+
+        <legend>Comentarios adicionales:</legend>
+        <textarea type="text" minlength="20" maxlength="200" >Escribe aquí tu motivación o necesidades (20 - 200 caracteres) </textarea> 
+        <br> <br>
+
+        <button>Enviar</button>
+
+        <button>Borrar</button>
+
+        </fieldset>
+
+    </form>
+</body>
+</table>
+</html>

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <link rel="stylesheet" href="práctica.css">
+  <meta charset="UTF-8">
+  <title>Festival de Cultura Digital 2026</title>
+</head>
+<body>
+
+  <header>
+    <h1>Festival de Cultura Digital 2026</h1>
+    <p>Festival de Cultura Digital del año 2026. Completa el formulario para inscribirte.</p>
+    <label for="especialidad">Opciones:</label><br>
+      <select name="opciones" id="opciones">
+        <option value="inscripcion"href="#Inscripcion">Inscripción</option>
+        <option value="programa" href="#Programa">Programa</option>
+        <option value="contacto" href="#Contacto">Contacto</option>
+      </select>
+  </header>
+
+  <section>
+    <article>
+      <h2> <a id="Inscripcion">Formulario de inscripción </a> </h2>
+
+      <form>
+        <p>
+          <label for="nombre">Nombre:</label><br>
+          <input type="text" id="nombre" name="nombre" required minlength="3" maxlength="30">
+        </p>
+
+        <p>
+          <label for="apellidos">Apellidos:</label><br>
+          <input type="text" id="apellidos" name="apellidos">
+        </p>
+
+        <p>
+          <label for="email">Email:</label><br>
+          <input type="email" id="email" name="email">
+        </p>
+
+        <p>
+          <label for="telefono">Teléfono:</label><br>
+          <input type="tel" id="telefono" name="telefono" pattern="\d{9}" maxlength="9" inputmode="numeric">
+        </p>
+
+        <p>
+          <label for="fecha_nacimiento">Fecha de nacimiento:</label><br>
+          <input type="date" id="fecha_nacimiento" name="fecha_nacimiento">
+        </p>
+
+        <p>
+          <label for="especialidad">Tipo de participación:</label><br>
+          <select id="especialidad" name="especialidad">
+            <option value="desarrollo_web">Asistente</option>
+            <option value="ciberseguridad">Expositor</option>
+            <option value="programacion">Artista</option>
+          </select>
+        </p>
+
+        <fieldset>
+          <legend>Áreas de interés</legend>
+
+          <input type="checkbox" id="Videojuegos" name="actividades[]" value="Videojuegos">
+          <label for="Videojuegos">Videojuegos</label><br>
+
+          <input type="checkbox" id="Música_electrónica" name="actividades[]" value="Música_electrónica" >
+          <label for="Música_electrónica">Música electrónica</label><br>
+
+          <input type="checkbox" disabled id="Programación" name="actividades[]" value="Programación">
+          <label for="Programación">Programación</label><br>
+
+          <input type="checkbox" id="act_ia" name="actividades[]" value="ia_generativas">
+          <label for="act_ia">Arte digital</label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Nivel de conocimientos</legend>
+          <input type="radio" id="nivel_basico" name="nivel" value="basico">
+          <label for="nivel_basico">Básico</label><br>
+
+          <input type="radio" id="nivel_intermedio" name="nivel" value="intermedio">
+          <label for="nivel_intermedio">Intermedio</label><br>
+
+          <input type="radio" id="nivel_avanzado" name="nivel" value="avanzado">
+          <label for="nivel_avanzado">Avanzado</label>
+        </fieldset>
+
+        <p>
+          <label for="comentarios">Comentarios:</label><br>
+          <textarea id="Texto largo para motivación personal" name="Texto largo para motivación personal" rows="5" cols="30" maxlength="300" placeholder="Texto largo para motivación personal"></textarea>
+        </p>
+
+        <p>
+          <input type="submit" value="Enviar">
+          <input type="reset" value="Borrar">
+        </p>
+      </form>
+    </article>
+  </section>
+
+  <section>
+    <article>
+      <h2> 
+      <a id="Programa"> Horario del evento </a> 
+      </h2>
+
+      <table>
+        <caption>
+        <h3>Horario del Festival</h3>
+        </caption>
+
+        <thead>
+          <tr>
+            <th rowspan="2">Dia</th>
+            <th colspan="1">Hora</th>
+            <th>Actividad</th>
+            <th>Espacio</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>14 de Enero</td>
+            <td>15:45</td>
+            <td>Arte Digital</td>
+            <td>Recinto ferial "A"</td>
+          </tr>
+
+          <tr>
+            <td>14 de Enero</td>
+            <td>18:45</td>
+            <td>Programación</td>
+            <td>Recinto ferial "B"</td>
+          </tr>
+
+          <tr>
+            <td>16 de Enero</td>
+            <td>15:45</td>
+            <td>Musica electrónica</td>
+            <td>Recinto ferial "A"</td>
+          </tr>
+
+          <tr>
+            <td>16 de Enero</td>
+            <td>18:45</td>
+            <td>Videojuegos</td>
+            <td>Recinto ferial "B"</td>
+          </tr>
+
+        </tbody>
+      </table>
+    </article>
+  </section>
+
+  <section>
+    <address>
+      Dirección del evento: 
+      Ctra. Estació s/n, 46870 Ontinyent (Valencia)
+    </address>
+    <email id="contacto">
+      Correo: 
+      festivalculturaontinyent@gmail.com
+    </email>
+    <p>
+      Web oficial:
+      <a href="https://www.messi.com">https://www.messi.com</a>
+    </p>
+  </section>
+
+  <footer>
+    <nombre>
+      Festival de Cultura Digital
+    </nombre>
+    <year>
+      2026
+    </year>
+    <p>
+      Aviso Legal: Esta página esta protegida por Copyright.
+    </p>
+  </footer>
+
+</body>
+</html>
